@@ -126,20 +126,7 @@ function runProgram() {
    
 }
 
-//tests
-//console.log(newPointStructure);
-//console.log(newPointStructure['a']);
-/*console.log("Letters with score '4':", oldPointStructure[4]);
-console.log("3rd letter within the key '4' array:", oldPointStructure[4][2]);
 
-let letters = oldPointStructure[8];
-console.log("Letters with score '8':", letters);
-console.log("2nd letter within the key '8' array:", letters[1]); */
-//console.log(oldPointStructure[1][0]);
-//console.log(transform(oldPointStructure));
-   // Simple scoring
-   //console.log("algorithm name: ", scoringAlgorithms[0].name);
-   //console.log("scorerFunction result: ", scoringAlgorithms[0].scorerFunction("JavaScript"));
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
