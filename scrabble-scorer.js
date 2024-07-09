@@ -67,7 +67,7 @@ let scrabbleScorer = function(word) {
    word = word.toLowerCase();
    let score = 0;
    
-      for (letter in newPointStructure) {
+      for (let letter in newPointStructure) {
          for (i=0; i<word.length; i++) {
             if(word[i]===letter) {
                score += newPointStructure[letter];
@@ -109,7 +109,7 @@ function scorerPrompt() {
 function transform(oldPointStructure) {
 let newPointObject = {};
 
-for (key in oldPointStructure) {
+for (let key in oldPointStructure) {
    for(i=0; i < oldPointStructure[key].length; i++) {
       newPointObject[oldPointStructure[key][i].toLowerCase()] = Number(key);
    }
