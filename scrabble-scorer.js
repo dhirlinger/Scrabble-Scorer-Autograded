@@ -53,7 +53,7 @@ let vowelBonusScorer = function(word) {
    let score = word.length;
    let numVowels = 0;
    let vowelsArr = ['A', 'E', 'I', 'O', 'U'];
-   for (i = 0; i < word.length; i++) {
+   for (let i = 0; i < word.length; i++) {
       if (vowelsArr.includes(word[i])) {
          numVowels++;
       }
@@ -68,7 +68,7 @@ let scrabbleScorer = function(word) {
    let score = 0;
    
       for (let letter in newPointStructure) {
-         for (i=0; i<word.length; i++) {
+         for (let i=0; i<word.length; i++) {
             if(word[i]===letter) {
                score += newPointStructure[letter];
             }
@@ -110,7 +110,7 @@ function transform(oldPointStructure) {
 let newPointObject = {};
 
 for (let key in oldPointStructure) {
-   for(i=0; i < oldPointStructure[key].length; i++) {
+   for(let i=0; i < oldPointStructure[key].length; i++) {
       newPointObject[oldPointStructure[key][i].toLowerCase()] = Number(key);
    }
 }
