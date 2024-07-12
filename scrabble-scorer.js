@@ -121,8 +121,7 @@ return newPointObject;
 
 function runProgram() {
    initialPrompt();
-   //scorerPrompt();
-   console.log(`Score for '${word}': ${scorerPrompt().scorerFunction(word)}`);
+  console.log(`Score for '${word}': ${scorerPrompt().scorerFunction(word)}`);
    
 }
 
